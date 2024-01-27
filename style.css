@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+    color: black;
+    overflow-x: hidden;
+}
+:root{
+    --text-color:rgb(195, 41, 195);
+    --bgco:rgb(249, 189, 76);
+    --orange-color:orange;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/* header section start here */
+header{
+    width: 100vw;  
+    background:black;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.navleftcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--bgco);
+}
+.navrightcontainer{
+    width: 500px;
+}
+.headernavul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headernava{
+    color: var(--bgco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+.headernava:hover{
+    text-decoration: underline;
+    color:rgba(215, 15, 215, 0.959);
+}
+
+/* main  section start here */
+main{
+    width: 100%;
+}
+/* first section start here */
+.section1{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    gap: 3rem;
+    margin: auto;
+}
+.leftsection1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.title1{
+    font-size:2rem;
+}
+.title2{
+    text-transform: uppercase;
+    font-size:3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.title3{
+    font-size:2rem;
+}
+.title3_1{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+.rightsection1{
+    width: 50%;
+}
+.imgcontainer{
+    width: 40rem;
+    height: 40rem;
+    overflow: hidden;
+}
+.developerimg{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+hr{
+    border: 0;
+    background-color:var(--bgco);
+    height: 0.7px;
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+
+/* second section start here */
+.section2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto 2rem auto;
+}
+.aboutcard{
+    width:70%;
+    margin:auto;
+    display: flex;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--bgco) 0px 2px 5px -1px, var(--bgco) 0px 1px 3px -1px;
+    margin-bottom: 1rem;
+}
+.section2_leftsection{
+    width: 43%;
+}
+.photocontainer{
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+}
+.selfphoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section2_rightsection{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.subtitle{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.inner_subtitle{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.aboutdesc{
+    line-height: 23px;
+    text-align: justify;
+    padding-right: 1rem;
+}
+.aboutnav{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+.about-link{
+    height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    cursor: pointer;
+}
+.about-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--bgco);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transition: 0.5s;
+}
+.about-link.active-link::after{
+    width: 100%;
+}
+.aboutnavcontent{
+    display: none;
+}
+.active-content{
+    display: block;
+}
+
+/* Third Section start here */
+.projectsection{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+.projectcard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1rem;
+    justify-items: center;
+}
+.prjcard{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: var(--bgco) 0px 2px 5px -1px, var(--bgco) 0px 1px 3px -1px;
+    margin: 1rem 0;
+}
+.prjimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition:transform 0.5s;
+}
+.prjdesc_layer{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6),var(--bgco));
+    border-radius: 0.5rem;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0 1rem;
+    transition:height 0.5s;
+}
+.prjdesc_layer h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+}
+.prjdesc_layer p{
+    color: white;
+    line-height: 20px;
+}
+.prjdesc_layer a i{
+    color: var(--bgco);
+    text-decoration: none;
+    font-size: 18px;
+    background:black;
+    border-radius: 50%;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prjcard:hover img{
+    transform: scale(1.1);
+}
+.prjcard:hover .prjdesc_layer{
+    height: 100%; 
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.seemorebtn{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:1rem;
+    background: black;
+    color: var(--bgco);
+    border: 3px solid var(--bgco);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.5s,transform 0.5s;
+}
+.seemorebtn:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 1px var(--bgco);
+}
+.seemorebutton{
+    display: none;
+}
+.projectcardrow2{
+    display: none;
+}
+.seelessbutton{
+    display: none;
+}
+
+/* Fourth section start here */
+.contact{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+}
+
+/* contact me left */
+.contactme-left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contactcontainer{
+    display: flex;
+    gap: 0.5rem;
+}
+.contactcontainer .logo i{
+    color:var(--orange-color);
+}
+.socialmediacontainer{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+.socialmediacontainer a i{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:var(--text-color);
+    transition: transform 0.5s;
+}
+.socialmediacontainer a:hover{
+    transform: translateY(-5px);
+} 
+.contactbutton{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 190px;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background:var(--orange-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* contact me right */
+.contactme-right{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.contactform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contactform input, .contactform textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:var(--bgco);
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color:black;
+}
+#msg{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:green;
+}
+
+/* footer section start here */
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: black;
+}
+.copyright p{
+    color: var(--bgco);
+}
+
+/* arrow is styled here */
+.arrow{
+    position: fixed;
+    top: 640px;
+    right:35px;
+}
+.arrow a i{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    color: var(--bgco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

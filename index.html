@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Shravan Chinchkar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/876c8eb20d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="headersection">
+        <nav>
+            <!-- nav left content start here -->
+            <div class="navleftcontainer">
+                Shravan's Portfolio
+            </div>
+
+            <!-- nav right content start here -->
+            <div class="navrightcontainer">
+                <ul class="headernavul">
+                    <li class="headernavli">
+                        <a href="#headersection" class="headernava">Home</a>
+                    </li>
+                    <li class="headernavli">
+                        <a href="#aboutsection" class="headernava">About</a>
+                    </li>
+                    <li class="headernavli">
+                        <a href="#projectsection" class="headernava">Project</a>
+                    </li>
+                    <li class="headernavli">
+                        <a href="#contactsection" class="headernava">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="arrow">
+        <a href="#headersection">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <main>
+        <!-- Section one main section -->
+        <section id="mainsection" class="section1">
+            <!-- left section start here -->
+            <div class="leftsection1">
+                <!-- title 1 -->
+                <div class="title1">
+                    Hey,my name is
+                </div>
+                <!-- title 2 -->
+                <div class="title2">
+                    <span class="title2"  id="name"></span>
+                </div>
+                <!--Title 3-->
+                <div class="title3" >
+                    and I am a <span class="title3_1" id="element"></span>
+                </div>
+            </div>
+            <!-- right section start here -->
+            <div class="rightsection1">
+                <div class="imgcontainer">
+                    <img src="assets/images/dev1.jpg" alt="developer image" class="developerimg" background-color="transperent">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- section two  about section-->
+        <section id="aboutsection" class="section2">
+            <div class="subtitle">
+                About
+            </div>
+            <div class="aboutcard">
+                <!-- left content -->
+            <div class="section2_leftsection">
+                <div class="photocontainer">
+                    <img src="assets/images/self_photo.jpg" alt="selfphoto" class="selfphoto">
+                </div>
+            </div>
+            <!-- right content -->
+            <div class="section2_rightsection">
+                <div class="inner_subtitle">
+                    About Me
+                </div>
+                <div class="aboutdesc">
+                    My name is Shravan Ajit Chinchkar. I was born an brought up in satara city and I am currently living in Pune city for my career and education  purpose. I am a Third year engineering Pune District Education Association student from Savitribai Phule Pune University. I am good at C++ programming which I learned during my diploma education . I come from a family business background that is why I know the importance of never giving up. In my free time I like to drive and go to gym since it keep me mentally and physically fit.
+                </div>
+                <div class="aboutnav">
+                    <p class="about-link active-link" onclick="openContent('skills')">Skills</p>
+                    <p class="about-link " 
+                    onclick="openContent('experience')">Experience</p>
+                    <p class="about-link" 
+                    onclick="openContent('education')">Education</p>
+                </div>
+
+                <!-- skills -->
+                <div id="skills" class="aboutnavcontent active-content">
+                    <ul>
+                        <li class="aboutnavcontentli">HTML</li>
+                        <li class="aboutnavcontentli">CSS</li>
+                        <li class="aboutnavcontentli">Javascript</li>
+                        <li class="aboutnavcontentli">C++</li>
+                        <li class="aboutnavcontentli">Data Structure using C++</li>
+                    </ul>
+                </div>
+
+                <!-- experience -->
+                <div id="experience" class="aboutnavcontent">
+                    <ul>
+                        <li>Internship at Octanet Pvt Ltd.</li>
+                    </ul>
+                </div>
+
+                <!-- education -->
+                <div id="education" class="aboutnavcontent">
+                    <ul>
+                        <li>Diploma in Computer Science Engineering.</li>
+                        <li>Pursuing Degree in Computer Engineering at "PDEA College of Engineering Manjari Bk. Pune".</li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <!-- section third my project section -->
+        <section id="projectsection" class="projectsection">
+            <div class="subtitle"> My Projects</div>
+
+            <div class="projectcard projectcardrow1">
+
+                <div class="prjcard prjcard1">
+                    <img src="assets/images/netflix.png" alt="netflix" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>Netflix Clone</h3>
+                        <p>Its a clone of netflix's landing page or we can say home page</p>
+                        <a href="https://github.com/shravan1chinchkar/Netflix-Clone.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="prjcard prjcard2">
+                    <img src="assets/images/student1.avif" alt="studysync" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>Study Sync</h3>
+                        <p>Its the landing page which uses the technologies like HTML,CSS</p>
+                        <a href="https://github.com/shravan1chinchkar/StudySync-Webpage.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="prjcard prjcard3">
+                    <img src="assets/images/blog_image.png" alt="blog" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>Blog Page</h3>
+                        <p>Its a page which display the blog card, specially using the CSS Grid technology</p>
+                        <a href="https://github.com/shravan1chinchkar/Blog-Website-Using-Html-CSS.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectcard projectcardrow2" id="prjcardrow2">
+
+                <div class="prjcard prjcard1">
+                    <img src="assets/images/space_image.jpg" alt="netflix" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>Space Tour</h3>
+                        <p>Its a website which is based on the space tour,if some one wants to visit the space he/she can visite this website</p>
+                        <a href="https://github.com/shravan1chinchkar/OCTANET_JANUARY/tree/master/Task1" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="prjcard prjcard2">
+                    <img src="assets/images/todo_list.avif" alt="studysync" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>TO-DO List</h3>
+                        <p>The the to-do list designed using HTML,CSS and Javascript</p>
+                        <a href="https://github.com/shravan1chinchkar/OCTANET_JANUARY/tree/master/Task2" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="prjcard prjcard3">
+                    <img src="assets/images/food_image.jpg" alt="blog" class="prjimg">
+                    <div class="prjdesc_layer">
+                        <h3>Recipe Website</h3>
+                        <p>Its just a simple recipe webpage which gives info about two dishes</p>
+                        <a href="#yetnotdeploved" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btncontainer" id="seemore" 
+            onclick="showMore()">
+                <a href="#" class="seemorebtn" id="seemorebtn">See More</a>
+            </div>
+
+            <div class="btncontainer seelessbutton" id="seeless" onclick="showLess()">
+                <a href="#" class="seemorebtn">See Less</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- section fourth contact me section -->
+        <section id="contactsection" class="contact">
+            <!-- left contact container -->
+            <div class="contactme-left">
+                <div class="subtitle">Contact Me</div>
+                <div class="contactcontainer">
+                    <div class="logo">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="email">
+                        shravanchinchkarstar@gmail.com
+                    </div>
+                </div>
+                <div class="contactcontainer">
+                    <div class="logo">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phone">
+                        +91 8767718477
+                    </div>
+                </div>
+                <div class="socialmediacontainer">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shravan-chinchkar-308010250/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/shravan1chinchkar" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <a href="assets/resume/resume.pdf" download class="cvdownload contactbutton">Download cv</a>
+            </div>
+
+            <!-- right contact conatiner -->
+            <div class="contactme-right">
+                <form name="submit-to-google-sheet" class="contactform">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="emailid" placeholder="Your Email">
+                    <textarea name="Message" id="message_id" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="contactbutton submitbutton">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <p>
+            copyright &#169; Shravan Chinchkar.All right reserved
+        </p>
+    </footer>
+
+    
+    <script>
+        var typed = new Typed('#name', {
+          strings: ['Shravan Ajit Chinchkar'],
+          typeSpeed: 150,
+        });
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],
+          typeSpeed: 150,
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8D811H8T511WKw2UtNUymiC57Qe91VkVip-8bPh3jGXjjmHVlKA1y7bO2RcEc8WBm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(() => {
+                    msg.innerHTML=""
+                }, 5000);
+            })
+            form.reset()
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
