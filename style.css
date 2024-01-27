@@ -633,6 +633,100 @@ hr{
         height: 303px;
     }
     .arrow{
-        top: 1150px;
+        top: 800px;
+        right: 30px;
     }
+}
+@media screen and (max-width:464px) {
+    .navleftcontainer{
+        font-size: 1.5rem;
+    }
+    .navrightcontainer{
+        padding: 0;
+    }
+    .title1, .title2, .title3, .title3_1{
+        font-size: 1.5rem;
+    }
+    .prjcard {
+        width: 373px;
+        height: 241px;
+    }
+}
+@media screen and (max-width:413px) {
+    .aboutcard{
+        width: 100%;
+    }
+    .section2_leftsection{
+        width: 100%;
+    }
+    .photocontainer {
+        height: 20rem;
+    }
+    .section2_rightsection{
+        width: 100%;
+    }
+    .aboutdesc{
+        line-height: 20px;
+        text-align: justify;
+        padding-right: 1rem;
+    }
+    .aboutnav{
+        gap: 2rem;
+    }
+    .about-link{
+        font-size: 0.95rem;
+    }
+    .prjcard {
+        width: 337px;
+        height: 306px;
+    }
+    .copyright p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:348px) {
+    .title1, .title2, .title3, .title3_1{
+        font-size: 1.2rem;
+    }
+    .prjcard {
+        width: 297px;
+        height: 213px;
+    }
+    .photocontainer{
+        height: 15rem;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+    .copyright p{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width:328px) {
+    .aboutnav{
+        gap:0.7rem
+    }
+    .about-link{
+        font-size: 0.95rem;
+    }
+    .prjcard {
+        width: 276px;
+        height: 184px;
+    } 
+    .contactme-left{
+        gap:1rem;
+    }
+    .copyright p{
+        font-size: 0.85rem;
+    }
+    .arrow{
+        right:10px;
+    }
+}
+@media screen and (max-width:315px) {
+    .copyright p{
+        font-size: 0.65rem;
+    }
+    
 }
