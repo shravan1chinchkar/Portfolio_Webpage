@@ -13,6 +13,17 @@ function openContent(tabname){
     document.getElementById(tabname).classList.add("active-content"); 
 }
 
+let sidemeu=document.getElementById("sidemenu");
+
+function openMenu(){
+    sidemeu.style.right="0";
+}
+
+function closeMenu(){
+    sidemeu.style.right="-40vw";
+}
+
+
 let prjcard=document.getElementById("prjcardrow2");
 let seemmore=document.getElementById("seemore");
 let seeless=document.getElementById("seeless");

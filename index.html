@@ -19,7 +19,7 @@
 
             <!-- nav right content start here -->
             <div class="navrightcontainer">
-                <ul class="headernavul">
+                <ul id="sidemenu" class="headernavul">
                     <li class="headernavli">
                         <a href="#headersection" class="headernava">Home</a>
                     </li>
@@ -32,7 +32,9 @@
                     <li class="headernavli">
                         <a href="#contactsection" class="headernava">Contact</a>
                     </li>
+                    <i class="hfas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="hfas fa-solid fa-bars" onclick="openMenu()"></i>
             </div>
 
         </nav>
@@ -135,7 +137,7 @@
 
         <!-- section third my project section -->
         <section id="projectsection" class="projectsection">
-            <div class="subtitle"> My Projects</div>
+            <div class="subtitle prjsubtitle"> My Projects</div>
 
             <div class="projectcard projectcardrow1">
 
@@ -283,6 +285,7 @@
           typeSpeed: 150,
         });
     </script>
+    <!-- linking Google Sheet with From  -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx8D811H8T511WKw2UtNUymiC57Qe91VkVip-8bPh3jGXjjmHVlKA1y7bO2RcEc8WBm/exec'
         const form = document.forms['submit-to-google-sheet']
