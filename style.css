@@ -342,9 +342,6 @@ hr{
     transition: transform 0.5s;
     overflow: hidden;
 }
-.socialmediacontainer a:hover{
-    transform: translateY(-5px);
-} 
 .contactbutton{
     text-decoration: none;
     font-size: 1rem;
