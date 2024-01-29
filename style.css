@@ -340,6 +340,7 @@ hr{
     font-size: 1.5rem;
     color:var(--text-color);
     transition: transform 0.5s;
+    overflow: hidden;
 }
 .socialmediacontainer a:hover{
     transform: translateY(-5px);
@@ -728,5 +729,4 @@ hr{
     .copyright p{
         font-size: 0.65rem;
     }
-    
 }
